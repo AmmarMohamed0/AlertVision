@@ -12,7 +12,7 @@ The function `send_email()` is responsible for sending an email alert with the n
 This class encapsulates the functionality for object detection. It loads the YOLOv8 model, initializes necessary attributes, and defines methods for predicting, plotting bounding boxes, and running the detection process.
 
 ## `__call__` Method
-This method is called when an instance of the `ObjectDetection` class is invoked. It starts a video capture loop where frames are captured from the specified video source (in this case, a video file path), and object detection is performed on each frame. If the number of detected objects changes from the previous frame, an email alert is sent. The loop continues until the video ends or is manually interrupted.
+This method is called when an instance of the `ObjectDetection` class is invoked. It starts a video capture loop where frames are captured from the specified video source, and object detection is performed on each frame. If the number of detected objects changes from the previous frame, an email alert is sent. The loop continues until the video ends or is manually interrupted.
 
 ## Displaying FPS
 The code calculates and displays the frames per second (FPS) on each frame.
